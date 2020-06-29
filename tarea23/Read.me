@@ -1,0 +1,14 @@
+Para ejecutar puedes hacerlo desde un IDE como PyCharm o Visual Studio Code o directamente desde una consola ejecutando
+    python cifrado_solitario.py
+
+También puedes copiar y pegar el código en un notebook y ejecutarlo de
+
+Para implementar el cifrado he usado solo listas apoyandome a veces en listas auxiliares para mover las cartas y hacer los cortes del mazo de cartas
+no he usado ninguna libreria externa excepto el random para hacer el barajeo de las cartas y obtener la clave.
+
+La clave es una baraja barajeada de modo aleatorio, y es la que uso para generar la ristra que considero es la parte mas importante de este ejercicio
+
+El cifrado y descrifrado del mensaje calculan sus propia ristra o keystream y ambos deben ser iguales por supuesto, debido a la naturaleza del metodo
+no permite usar caracteres especiales, ni signos de interrogacion o puntuacion y es valido solo para el alfabeto Ingles, no se pueden usar ñ del español
+por ejemplo, he añadido una función de normalizacion a la que he añadido la exclusion de la ñ porque considero que al estar con teclado español es el unico
+caracter no perteneciente al alfabeto Ingles que podriamos introducir.
