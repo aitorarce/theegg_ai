@@ -9,7 +9,7 @@ class Vaca():
 
 # Funcion recursiva que recorre la lista pasada y en cada nueva llamada recursiva dentro del for que recorre los elementos
 # de las listas le voy pasando un elemento menos del principio de la lista actual para esa iteracion
-# hasta que me quedo sin elementos en la lista original y devuele de la lista actva un array vacio (condicion para empezar a salir de la recursividad),
+# hasta que me quedo sin elementos en la lista original y devuelve de la lista activa un array vacio (condicion para empezar a salir de la recursividad),
 # segun van volviendo las llamadas de la recursividad va añadiendo el elemento [0] de cada iteracion recursiva
 # que no se ha enviado a la recursividad posterior a cada uno de los elementos de la lista a devolver de la llamada recursiva anterior
 # Es decir, al volver de la recursividad va construyendo el array final desde el ultimo elemento hacia atras. en la primera
@@ -19,7 +19,7 @@ class Vaca():
 # las llamadas recursivas va construyendo el array final añadiendo a la lista que toque  todos los elementos de las listas previas
 # de este modo se obtiene una lista con todos los subconjuntos posibles de un conjunto cuyo cardinal de elementos se corresponde con la formula 2^n
 # siendo n el numero de elementos en el conjunto.
-#PD: la lista es generica se le puede pasar un array de numeros o de cadenasw o lo que quieras para poder debugar y ver como va construyendo el array final
+#PD: la funcion subconjuntos es generica se le puede pasar un array de numeros o de cadenasw o lo que quieras para poder debugar y ver como va construyendo el array final
 # por ejemplo ejecutando: print(subconjuntos([0,1,2,3,4])
 def subconjuntos(lista):
     if len(lista) == 0:
